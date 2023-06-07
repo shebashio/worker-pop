@@ -1,0 +1,17 @@
+{
+    "name": "he-pops-worker",
+    "version": "1.0.0",
+    "description": "A Cloudflare Worker that fetches data from an API, converts it to CSV, and stores it in a Workers KV namespace.",
+    "main": "index.js",
+    "scripts": {
+      "build": "webpack"
+    },
+    "dependencies": {
+      "json2csv": "^5.0.6"
+    },
+    "devDependencies": {
+      "@cloudflare/kv-asset-handler": "^0.1.4",
+      "webpack": "^5.38.1",
+      "webpack-cli": "^4.7.2"
+    }
+  }

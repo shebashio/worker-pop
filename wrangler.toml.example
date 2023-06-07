@@ -1,0 +1,20 @@
+name = "he-pops-worker"
+type = "webpack"
+account_id = "your-account-id"
+workers_dev = true
+route = ""
+zone_id = ""
+
+[site]
+bucket = "./public"
+entry-point = "workers-site"
+
+[kv_namespaces]
+[[kv_namespaces.bindings]]
+name = "KV_NAMESPACE"
+namespace_id = "your-namespace-id"
+
+[build]
+command = "npm run build"
+[build.upload]
+format = "service-worker"
